@@ -67,6 +67,12 @@ h3{
   margin-top: 0;
 }
 
+h1:hover,
+h3:hover,
+tr{
+  cursor: default;
+}
+
 .table-pic{
   width: 70px;
   height: auto;
