@@ -31,3 +31,12 @@ function changeTheme() {
     }
 
 }
+
+
+document.getElementById("homeBtn").onclick = function(){
+    location.href = './index.html';
+}
+
+document.getElementById("aboutBtn").onclick = function(){
+    location.href = './about.html';
+}

@@ -44,9 +44,79 @@ body {
   width: 100%;
   height: 100%;
   padding-top: 9px;
+  position: relative;
+  z-index: 1;
 }
 
-.header-button {
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 10px 50px;
+  display: inline-block;
+  margin: 5px 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Button 1 */
+.btn-1 {
+  border: 3px solid black;
+  color: black;
+}
+
+/* Button 1d */
+.btn-1d {
+  overflow: hidden;
+}
+
+.btn-1d:after {
+  width: 0;
+  height: 103%;
+  top: 50%;
+  left: 50%;
+  background: #a3939b;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.btn-1d:hover,
+.btn-1d:active {
+  color: rgb(255, 255, 255);
+}
+
+.btn-1d:hover:after {
+  width: 90%;
+  opacity: 1;
+}
+
+.btn-1d:active:after {
+  width: 101%;
+  opacity: 1;
+}
+
+/* .header-button {
   width: 10%;
   height: 73%;
   text-decoration: none;
@@ -66,7 +136,7 @@ body {
   cursor: pointer;
   background-color: #ccc;
   color: #000;
-}
+} */
 
 a {
   color: black;
