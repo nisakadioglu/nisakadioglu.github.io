@@ -5,10 +5,10 @@ function changeTheme() {
     console.log(count);
     if (count % 2 == 1) {
         document.getElementById("header").style.backgroundImage = "url('./images/bg2.jpg')";
-        var buttons = document.getElementsByClassName("header-button");
+        var buttons = document.getElementsByClassName("btn-1");
         
         for (let i = 0; i < buttons.length; i++) {
-            buttons[i].style.backgroundColor = "black";
+            buttons[i].style.borderColor = "#f5f3f3";
             buttons[i].style.color = "#ccc";
         }
 
@@ -20,11 +20,11 @@ function changeTheme() {
     else {
         document.getElementById("header").style.backgroundImage = "url('./images/bg.jpg')";
 
-        var buttons = document.getElementsByClassName("header-button");
+        var buttons = document.getElementsByClassName("btn-1");
 
         for (let i = 0; i < buttons.length; i++) {
-            buttons[i].style.backgroundColor = "#f5f3f3";
-            buttons[i].style.color = "black";
+            buttons[i].style.borderColor = "black";
+            buttons[i].style.color = "#000";
         }
 
         document.getElementById("header-text").style.color = "black";
@@ -32,11 +32,3 @@ function changeTheme() {
 
 }
 
-
-document.getElementById("homeBtn").onclick = function(){
-    location.href = './index.html';
-}
-
-document.getElementById("aboutBtn").onclick = function(){
-    location.href = './about.html';
-}
