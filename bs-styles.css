@@ -6,6 +6,37 @@
   background-color: #f4e2e2;
 }
 
+
+.navbar-brand {
+  display: inline-block;
+  position: relative;
+  color: black;
+  font-size: 30px;
+}
+
+.navbar-brand::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar-brand:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar:hover{
+  text-decoration: underline;
+  animation: forwards 0.1ms;
+}
+
 .btn{
   background-color: rgb(244, 200, 200);
   color: black;
@@ -19,6 +50,10 @@
 .btn:hover{
   background-color: #f4e2e2;
   color: black;
+}
+
+.btn:active{
+  background-color: azure;
 }
 
 .card-group{
