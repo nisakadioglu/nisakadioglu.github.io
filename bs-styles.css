@@ -78,3 +78,7 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
+
+footer{
+  background-color: #f4e2e2;
+}
