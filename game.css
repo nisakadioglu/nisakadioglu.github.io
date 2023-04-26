@@ -1,3 +1,12 @@
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
 body,
 html {
   height: auto;
@@ -29,8 +38,9 @@ td {
 }
 
 table {
-  border: 1px solid black;
-  table-layout: fixed;
+  /* border: 1px solid black; */
+  border: none;
+  /* table-layout: fixed; */
   width: 100%;
 }
 
@@ -43,7 +53,10 @@ td {
   width: 100px;
   overflow: hidden;
   height: 80px;
+  border: none;
 }
+
+
 
 /* td {
   display: flex;
@@ -51,8 +64,9 @@ td {
 } */
 
 img {
-  width: 70px;
+  width: 80px;
   height: auto;
+  filter: drop-shadow(5px 5px 5px #222);
 }
 
 .game-grid{
@@ -69,4 +83,18 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-left: 30px;
+}
+
+.header h1{
+  font-size: 40px;
+  margin-top: 0;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.right #congrats{
+  color: #f0b4bc;;
+  text-decoration: underline wavy #f0b4bc 5px;
+  animation: 1s ease-in-out 0s 1 slideInFromBottom;
 }

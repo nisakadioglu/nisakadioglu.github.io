@@ -9,7 +9,7 @@ function randomFruit(params) {
 
     for (let i = 0; i < 6; i++) {
         for (let j = 0; j < 6; j++) {
-            var randomNum = Math.floor(Math.random() * 5);
+            var randomNum = Math.floor(Math.random() * 7);
             var img = document.createElement('img');
             var cell = gameTable.rows[i].cells[j];
 
@@ -30,7 +30,7 @@ function randomFruit(params) {
                     break;
 
                 case 2:
-                    img.src = './images/pomegranate.png';
+                    img.src = './images/avocado.png';
                     cell.innerHTML = "";
                     cell.appendChild(img);
                     break;
@@ -45,7 +45,18 @@ function randomFruit(params) {
                     img.src = './images/watermelon.png';
                     cell.innerHTML = "";
                     cell.appendChild(img);
+                    break;
 
+                case 5:
+                    img.src = './images/blueberry.png';
+                    cell.innerHTML = "";
+                    cell.appendChild(img);
+                    break;
+
+                case 6:
+                    img.src = './images/pineapple.png';
+                    cell.innerHTML = "";
+                    cell.appendChild(img);
                     break;
 
                 default:
