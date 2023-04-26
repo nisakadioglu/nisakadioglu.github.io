@@ -69,14 +69,6 @@ function randomFruit(params) {
 }
 
 
-
-
-// const clickFunc = e => {
-//     // console.log(e.target.id);  // Get ID of Clicked Element
-//     // console.log("aaa")
-
-// }
-
 let clickCounter = 0;
 document.getElementById("counter").innerHTML = clickCounter;
 
@@ -97,4 +89,5 @@ function clickFunc(params) {
         document.getElementById("congrats").innerHTML = "Congratulations";
     }
 }
+
 
