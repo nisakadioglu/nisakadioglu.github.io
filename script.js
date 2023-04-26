@@ -6,7 +6,7 @@ function changeTheme() {
     if (count % 2 == 1) {
         document.getElementById("header").style.backgroundImage = "url('./images/bg2.jpg')";
         var buttons = document.getElementsByClassName("btn-1");
-        
+
         for (let i = 0; i < buttons.length; i++) {
             buttons[i].style.borderColor = "#f5f3f3";
             buttons[i].style.color = "#ccc";
