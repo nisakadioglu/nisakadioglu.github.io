@@ -7,20 +7,20 @@
     <link rel="icon" href="./images/favicon.png">
     <link rel="stylesheet" href="about-styles.css" />
     <title>About</title>
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="side-panel">
+    <div class="side-panel" id="side-panel">
         <img src="./images/icon.jpg" class="profile-pic">
-        <h1 class="side-header">Nisa Sıla Kadıoğlu</h1>
-        <h3>Student in Marmara University</h3>
+        <h1 class="side-header" id="side-header">Nisa Sıla Kadıoğlu</h1>
+        <h3 id="side-subheader">Student in Marmara University</h3>
     </div>
 
     <div class="content">
         <div class="header">
             <div class="buttons">
-                <button onclick="changeTheme()" class="btn btn-1 btn-1d">Change Theme</button>
+                <button onclick="changeThemeAbout()" class="btn btn-1 btn-1d">Change Theme</button>
                 <button href="./index.html" class="btn btn-1 btn-1d" id="homeBtn" onclick="location.href = './index.html'">Home</button>
                 <button href="./about.html" class="btn btn-1 btn-1d" id="aboutBtn" onclick="location.href = './about.html'">About</button>
             </div>
@@ -30,40 +30,22 @@
         <div class="main">
             <h1 class="main-header">About</h1>
             <p class="main-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisl
-                urna, maximus sit amet ullamcorper at, cursus sit amet nisl. Praesent
-                pulvinar ipsum enim, pretium tristique turpis pretium sit amet.
-                Vestibulum rutrum purus porta tincidunt porta. Nam auctor non dui
-                scelerisque convallis. Etiam aliquam dapibus lacus eget commodo. Aliquam
-                nec metus non dolor mattis congue. Mauris et mattis nunc. Etiam laoreet
-                aliquam dapibus. Etiam aliquet lorem id ultricies ornare. Morbi
-                tristique eu lacus sit amet iaculis. Vivamus ullamcorper maximus augue,
-                vitae auctor metus lacinia ut. Morbi placerat vestibulum felis eget
-                imperdiet. Nunc urna eros, viverra sit amet quam sit amet, viverra
-                pellentesque arcu. Vestibulum ante justo, venenatis sit amet ultricies
-                vel, semper sed diam. Nulla id rutrum odio, non sollicitudin ipsum. Nam
-                accumsan nibh sodales ligula consequat, ac finibus ex ultrices. Aliquam
-                ut massa gravida, ornare risus a, vulputate diam. Cras condimentum
-                interdum erat a eleifend. Maecenas volutpat mi ipsum, sit amet viverra
-                risus maximus ac. Curabitur tincidunt convallis pharetra. Mauris tempus
-                massa lectus, fermentum facilisis nisl eleifend aliquam. Quisque
-                placerat dapibus diam, sed bibendum neque imperdiet ut. Nullam laoreet
-                nisi nec lacus venenatis, nec feugiat magna ultricies.
+                Born and had her education in Istanbul. Got interested in Computer Science when she was 15. Started her higher education in Marmara University in 2020. 
             </p>
             <div class="table-div">
                 <table>
                     <tr>
                         <td>GitHub</td>
                         <td class="link-td">
-                            <img src="./images/github-mark.png" class="table-pic" />
-                            <a href="https://github.com/nisakadioglu" target="_blank">Profile</a>
+                            <a href="https://github.com/nisakadioglu" target="_blank" ><img src="./images/github-mark.png" class="table-pic" /></a>
+                            <a href="https://github.com/nisakadioglu" target="_blank" class="link">Profile</a>
                         </td>
                     </tr>
                     <tr>
                         <td>Marmara University</td>
                         <td class="link-td">
-                            <img src="./images/mu-logo.png" class="table-pic" />
-                            <a href="http://blm.teknoloji.marmara.edu.tr/" target="_blank">Official Webpage</a>
+                            <a href="http://blm.teknoloji.marmara.edu.tr/" target="_blank" ><img src="./images/mu-logo.png" class="table-pic" /></a>
+                            <a href="http://blm.teknoloji.marmara.edu.tr/" target="_blank" class="link">Official Webpage</a>
                         </td>
                     </tr>
                 </table>

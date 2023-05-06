@@ -1,4 +1,5 @@
 var count = 0;
+var countAbout = 0;
 
 function changeTheme() {
     count++;
@@ -32,3 +33,19 @@ function changeTheme() {
 
 }
 
+function changeThemeAbout() {
+    countAbout++;
+    console.log(countAbout);
+    if (countAbout % 2 == 1) {
+        document.getElementById("side-panel").style.backgroundImage = "url('./images/bg2.jpg')";
+        document.getElementById("side-header").style.color = "white";
+        document.getElementById("side-subheader").style.color = "white";
+
+    }
+
+    else {
+        document.getElementById("side-panel").style.backgroundImage = "url('./images/bg.jpg')";
+        document.getElementById("side-header").style.color = "black";
+        document.getElementById("side-subheader").style.color = "black";
+    }
+}
