@@ -2,6 +2,7 @@
   0% {
     transform: translateY(-100%);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -66,27 +67,6 @@ body {
   position: relative;
   z-index: 1;
 }
-
-/* .header-button{
-	width: 10%;
-	height: 60%;
-	background-color: #f5f3f3;
-	border-color: #ccc;
-	border-radius: 20px;
-	margin-left: 15px;
-	box-shadow: none;
-	border-style: solid;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-}
-
-.header-button:hover{
-	cursor: pointer;
-	background-color: #ccc;
-  color: #000;
-} */
 
 .btn {
   border: none;
@@ -162,21 +142,56 @@ table {
   animation: 1s ease-out 0s 1 slideInFromTop;
 }
 
-/* table tr:last-child td:first-child {
-  border: 2px solid orange;
-  border-bottom-left-radius: 10px;
+ul {
+  list-style-type: square;
+  animation: 1s ease-out 0s 1 slideInFromTop;
 }
-  
-table tr:last-child td:last-child {
-  border: 2px solid green;
-  border-bottom-right-radius: 10px;
-} */
 
-table,
-td,
-tr {
-  border: 1px solid;
+li {
+  font-size: 20px;
+}
+
+h1 {
+  margin: 5px 20px;
+  font-size: 50px;
+  text-decoration: none;
+  background-image: linear-gradient(#f0b4bc, #f0b4bc);
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+h3 {
+  margin-top: 0;
+  text-decoration: none;
+  background-image: linear-gradient(#f0b4bc, #f0b4bc);
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+h1:hover,
+h1:focus,
+h1:active,
+h3:hover,
+h3:focus,
+h3:active {
+  background-size: 100% 0.1em;
+  cursor: default;
+}
+
+table {
+  /* border: 1px solid; */
   border-collapse: collapse;
+  margin-top: 30px;
+}
+
+tr {
+  border-bottom: 1px solid black;
 }
 
 td {
@@ -184,19 +199,10 @@ td {
   font-size: 20px;
   color: #333;
 }
-/* 
-.profile-pic {
-  width: 18%;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 1px;
-  animation: 1s ease-in-out 0s 1 slideInFromTop;
-} */
 
 .caption {
   display: inline-block;
   position: relative;
-  /* margin: 10px; */
   width: 40%;
   display: flex;
   justify-content: center;
@@ -240,31 +246,11 @@ td {
   opacity: 1;
 }
 
-h1 {
-  margin: 5px 20px;
-  font-size: 50px;
-}
-
-h3 {
-  margin-top: 0;
-}
-
-h1:hover,
-h3:hover,
-tr {
-  cursor: default;
-}
-
 .table-pic {
   width: 70px;
   height: auto;
   margin-right: 10px;
 }
-
-/* a {
-  color: black;
-  text-decoration: none;
-} */
 
 .link {
   color: black;
@@ -283,6 +269,10 @@ tr {
   border: none;
 }
 
+.link-td .link{
+  margin-left: 10px;
+}
+
 .content {
   width: 100%;
   display: flex;
@@ -293,12 +283,12 @@ tr {
   flex-direction: column;
 }
 
-.content-text {
+/* .content-text {
   width: 80%;
   font-size: 15px;
   padding: 30px 0;
   animation: 1s ease-out 0s 1 slideInFromTop;
-}
+} */
 
 .footer {
   width: 100%;
@@ -406,11 +396,13 @@ tr {
   0% {
     opacity: 0.3;
   }
+
   40% {
     opacity: 0.5;
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #ee90d6,
       0 0 0 10px rgba(255, 255, 255, 0.5);
   }
+
   100% {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #ee90d6,
       0 0 0 10px rgba(255, 255, 255, 0.5);
@@ -418,15 +410,18 @@ tr {
     opacity: 0;
   }
 }
+
 @-moz-keyframes sonarEffect {
   0% {
     opacity: 0.3;
   }
+
   40% {
     opacity: 0.5;
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #ee90d6,
       0 0 0 10px rgba(255, 255, 255, 0.5);
   }
+
   100% {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #ee90d6,
       0 0 0 10px rgba(255, 255, 255, 0.5);
@@ -434,15 +429,18 @@ tr {
     opacity: 0;
   }
 }
+
 @keyframes sonarEffect {
   0% {
     opacity: 0.3;
   }
+
   40% {
     opacity: 0.5;
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #ee90d6,
       0 0 0 10px rgba(255, 255, 255, 0.5);
   }
+
   100% {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #ee90d6,
       0 0 0 10px rgba(255, 255, 255, 0.5);
