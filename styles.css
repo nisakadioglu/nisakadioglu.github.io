@@ -86,6 +86,9 @@ body {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  white-space: nowrap;
 }
 
 .btn:after {
@@ -345,7 +348,6 @@ td {
 
 .hi-icon:before {
   font-family: "ecoicon";
-  speak: none;
   font-size: 48px;
   line-height: 90px;
   font-style: normal;

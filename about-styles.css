@@ -143,12 +143,13 @@ a:hover {
   background-size: cover;
   animation: 1s ease-out 0s 1 slideInFromTop;
   position: fixed;
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  z-index: 1;
+  top: 0;
   left: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-x: hidden;
   padding-top: 20px;
   border-right: 1px solid black;
+  min-width: 160px;
 }
 
 .profile-pic {
@@ -165,6 +166,7 @@ a:hover {
 .content{
   width: 78%;
   margin-left: 20%;
+  min-width: 635px;
 }
 
 .main {
